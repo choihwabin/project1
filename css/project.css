@@ -261,7 +261,7 @@ main > section > h3{font-size: 30px;}
   position: relative;
 }
 
-#sec2 > h3{
+#sec2 > #h3_2{
   padding-top: 100px;
   padding-left: 50px;
   font-weight: bold;
