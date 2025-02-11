@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1차 project</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- reset서식 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!-- css서식 -->
+    <link href="./css/project.css" rel="stylesheet" type="text/css">
+    <!-- 폰트어썸 서식 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- 제이쿼리 슬라이드 서식 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- 구글웹폰트 - Nanum Gothic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+  <script src="./javascript/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://s3.tradingview.com/tv.js"></script>
+
+  <!-- 헤더영역 시작 -->
+  <header id="header">
+      <!-- 내비게이션 -->
+      <h1><a href="index.html" title="메인페이지로 바로가기"><img src="./images/logo_nobackground.png" alt="메인로고"></a></h1>
+
+      <div class="nav_wrap">
+      <nav class="nav1">
+        <ul>
+          <li><a href="#sec1" title="회사">COMPANY</a>
+            <ul class="sub_nav">
+            <li><a href="#sec1" title="회사소개">회사소개</a></li>
+            <li><a href="#sec1" title="경영진">경영진</a></li>
+            <li><a href="#sec1" title="윤리경영">윤리경영</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#sec2" title="회사기술">TECHNOLOGY</a>
+            <ul class="sub_nav">
+              <li><a href="#sec2" title="NexP 지속형 기술">NexP 지속형 기술</a></li>
+              <li><a href="#sec2" title="NexMab ADC기술 ">NexMab ADC기술 </a></li>
+              <li><a href="#sec2" title="Hybrozyme 기술">Hybrozyme 기술</a></li>
+              <li><a href="#sec2" title="바이오시밀러">바이오시밀러</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#sec3" title="파이프라인">PIPELINE</a>
+            <ul class="sub_nav">
+              <li><a href="#sec3" title="ALT-P1">ALT-P1</a></li>
+              <li><a href="#sec3" title="ALT-P7">ALT-P7</a></li>
+              <li><a href="#sec3" title="ALT-L9">ALT-L9</a></li>
+              <li><a href="#sec3" title="ALT-L2">ALT-L2</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#sec4" title="회사관련뉴스">MEDIA</a>
+          <ul class="sub_nav">
+            <li><a href="#sec4" title="보도자료">보도자료</a></li>
+            <li><a href="#sec4" title="주식정보">주식정보</a></li>
+          </ul>
+          </li>
+
+          <li><a href="#sec5" title="인재채용">RECRUITMENT</a>
+          <ul class="sub_nav">
+            <li><a href="#sec5" title="채용공고">채용공고</a></li>
+          </ul>
+          </li>
+        </ul>
+      </nav>
+      
+      
+      <div class="r_nav">
+          <input type="search" title="검색창" placeholder="Search" id="search">
+          <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+      
+        <a href="login.html" title="로그인페이지로바로가기" class="login">LOGIN</a>
+        
+        <select name="LANGUIGE" id="languige">
+          <option value="">LANGUIGE</option>
+          <option value="">한국어</option>
+          <option value="">ENGLISH</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- 메인영역 시작 -->
+  <main id="main">
+    <article class="m_img">
+      <h2 class="h3">메인이미지</h2>
+      <div class="swiper slide">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" title="메인슬라이드1">
+              <img src="./images/mainslide1.png" alt="슬라이드1">
+            </a>
+          </div>
+          
+          <div class="swiper-slide">
+            <a href="#" title="메인슬라이드2">
+              <img src="./images/mainslide2.png" alt="슬라이드2">
+            </a>
+          </div>
+  
+          <div class="swiper-slide">
+            <a href="#" title="메인슬라이드3">
+              <img src="./images/mainslide3.png" alt="슬라이드3">
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="#" title="메인슬라이드4">
+              <img src="./images/mainslide4.png" alt="슬라이드4">
+            </a>
+          </div>
+        </div>
+
+        <!-- 콘트롤버튼 -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </article>
+    <!-- 탑버튼 -->
+    <div id="top_btn">
+      <p>&#94;</p>
+      <p>TOP</p>
+    </div>
+
+<!-- section1 -->
+  <section id="sec1" class="section">
+    <h2>COMPANY</h2>
+    <article>
+      <h3 class="h3">section1</h3>
+      <div id="sec1_icon">
+      <span id="sec1_num">&nbsp;</span>
+      <i class="fa-solid fa-caret-left" id="l_btn"></i>
+      <i class="fa-solid fa-caret-right" id="r_btn"></i>
+      </div>
+
+    <div id="sec_b_img2">
+      <img src="./images/slide1.JPG" alt="슬라이드이미지" id="sec1_img">
+    </div>
+    </article>
+
+  </section>
+
+<!-- section2 -->
+  <section id="sec2" class="section">
+    <h2 id="h3_2">TECHNOLOGY</h2>
+    <article class="sec2_art">
+      <h3 class="h3">section2</h3>
+      <a href="#h3_2" title="NexP&#8482; 지속형 기술" id="sec2_a1"><img src="./images/section2-1.jpg" alt="NexP&#8482;	지속형 기술" class="image1" id="sec2_img1" >NexP&#8482; 지속형 기술</a>
+
+      <a href="#h3_2" title="NexMab&#8482; ADC기술" id="sec2_a2"><img src="./images/section2-2.jpg" alt="NexMab™ ADC기술" class="image2" id="sec2_img2">NexMab&#8482; ADC기술</a>
+
+      <a href="#h3_2" title="Hybrozyme&#8482;	Technology" id="sec2_a3"><img src="./images/section2-3.jpg" alt="Hybrozyme&#8482; Technology" class="image3" id="sec3_img">Hybrozyme&#8482; Technology</a>
+      
+      <a href="#h3_2" title="바이오시밀러" id="sec2_a4"><img src="./images/section2-4.jpg" alt="바이오시밀러" class="image4" id="sec4_img">바이오시밀러</a>
+      
+<!-- sec2 모달윈도우 -->
+      <div class="mymodal1" id="modal1">
+        <div class="modal1_con">
+          <span class="close">&times;</span>
+          <img src="./images/section2~1.jpg" alt="NexP&#8482; 지속형 기술이미지" id="modal_img1">
+          <pre class="modal1_info">
+          전 세계적으로 다양한 지속형 기술이 사용되고 있는 가운데,
+          ㈜알테오젠의 NexP™ 지속형 기술은 인체 혈액에 풍부하게 존재하는 인간A1AT (Alpha-1 Antitrypsin)단백질을
+          이용하여 유전자재조합 기술을 통해 바이오의약품의 체내 반감기를 증가시키는 단백질 운반체로 사용하는 2세대 지속형 기술이다.
+
+          A1AT는 수년 간 폐기종 치료제로 사용되어 왔기 때문에 그 안전성이 이미 입증되어 있는 안전한 단백질이다.
+          
+          *체내 지속성 증가
+          *단백질 고유의 활성 제거 </pre>
+        </div>
+      </div>
+
+      <div class="mymodal2" id="modal2">
+        <div class="modal2_con">
+          <span class="close1">&times;</span>
+          <img src="./images/section2~2.jpg" alt="NexMab&#8482; ADC기술" id="modal_img2">
+          <pre class="modal1_info1">
+            많은 글로벌 제약회사들이 항암치료제를 개발하고 있는 가운데, 이상적인 항암치료제는 암세포만을 선택적으로
+            추적, 제거하면서 정상세포에는 영향을 미치지 않는 표적치료제이다.이를 위한 항체-약물 접합체
+            (antibody-drug conjugate, ADC)는 암세포에 대한 특이성이 매우 높은 항체를 운반체로 하여, 매우 높은 세포독성을 갖는
+            항암물질을 암세포에만 특이적으로 운반하는 작용기작을 가지고 있다.
+
+            ㈜알테오젠은 고유의 원천 기반기술인 NexMab™ ADC 기술을 이용하여 
+            다수의 항암치료제를 2세대 항체-약물 접합체로 개발하고 있다.
+            
+            *암세포에 대한 높은 표적성
+            *강력한 항암치료 효과 
+          </pre>
+        </div>
+      </div>
+
+      <div class="mymodal3" id="modal3">
+        <div class="modal3_con">
+          <span class="close2">&times;</span>
+          <img src="./images/section2~3.jpg" alt="NexMab&#8482; ADC기술" id="modal_img3">
+          <pre class="modal1_info2">
+            (주)알테오젠이 개발한 Hybrozyme™ Technology은 원래 효소의 고유한 작용기작을 유지하면서 단백질 구조의
+            유연성과 안정성을 향상시키는 단백질공학 기술이다. (주)알테오젠은 인간 히알루로니다제 (Hyaluronidase) 의 하나에
+            Hybrozyme™ Technology을 적용하여 효소 활성과 열 안정성이 증가한 신규한 인간 히알루로니다제를 개발하였다. 
+            ALT-B4는 피하의 히알루론산을 가수분해하여 정맥주사에서 피하주사 방식으로 약물전달 방식을 변경할 수 있어 5분 이내의
+            주사시간으로 환자 편의성을 증가시킨다. 또한, 안과 수술에서 마취제의 확산과 미용 분야에서 피부에 주입한 히알루론산 필러를 
+            분해할 때도 사용된다.
+
+            * 효소 활성과 열 안정성 향상
+            * CHO 세포에서 높은 단백질 발현률로 생산성 증가 
+          </pre>
+        </div>
+      </div>
+
+      <div class="mymodal4" id="modal4">
+        <div class="modal4_con">
+          <span class="close3">&times;</span>
+          <img src="./images/section2-4.png" alt="NexMab&#8482; ADC기술" id="modal_img4">
+          <pre class="modal1_info3">
+            <img src="./images/section2~a.png" alt="Blockbuster 단일클론 항체">
+            Blockbuster 단일클론 항체
+            유방암/위암 치료제70억 달러 시장 (2016)
+            임상 1상 완료 (Canada)(브라질 Cristalia 사 제휴)
+            <img src="./images/section2~b.png" alt="초고속 성장 바이오의약품">
+            초고속 성장 바이오의약품
+            노인성 황반변성 치료제135억 달러 시장 (2021)
+            바이오시밀러 개발고유 제형/제법 특허 보유
+
+            
+            ㈜알테오젠은 당사 고유의 세포주, 생산 공정 및 분석법 등의 독자적인
+            바이오시밀러 기술을 자체로 개발하여, 오리지널 단백질의약품과 효능은
+            동등하면서도 가격은 저렴한 바이오시밀러
+            의약품들을 개발하고 있다.
+
+          </pre>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- section3 -->
+  <section id="sec3" class="section">
+    <h3>PIPELINE-PROJECT</h3>
+    <!-- 첫번째 그래프 -->
+    <p class="p01"><i class="fa-solid fa-arrow-pointer">(각 그래프 앞에 마우스를 올리시면 그래프가 작동합니다.)</i></p>
+
+  <span class="s1">Research</span> <span class="s2">Process</span> <span class="s3">Pre&#45;clinical</span> <span class="s4">Phase 1</span> <span class="s5">Phase 2</span> <span class="s6">Phase 3</span>
+  
+    <p class="p02">ALT-P1</p>
+    <p class="p03">Long-acting Human Growth Hormone</p>
+    <a href="ALT.html" title="ALT-P1설명보기" id="sec3_a1"><i class="fa-solid fa-circle-question" ></i>Domestic Phase II in Progress / Preparation of global Phase II</a>
+
+  <div class="chart">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <div class="bar_graph1"></div>
+
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+
+<!-- 1번째 그래프 모달윈도우 -->
+  <div class="mymodal5" id="modal5">
+    <div class="modal5_con">
+      <span class="close4">&times;</span>
+      <img src="./images/section3-1.jpg" alt="NexMab&#8482; ADC기술" id="modal_img5">
+      <pre class="modal1_info4">
+        ㈜알테오젠은 유방암 치료제 허셉틴의 바이오시밀러인 ALT-L2를 개발 중에 있다.
+
+        ·  허셉틴은 Roche 사의 오리지널 바이오의약품으로, 2016년 현재 70억 달러의 시장을 차지하고 있는 블록버스터 단일클론항체
+        의약품이다.  특히, 효능이 뛰어나면서도 부작용이 적고, 2010년 위암의 적응증이 추가 (미국 FDA)되어 위암 환자가 많은 아시아를
+        중심으로 다른 항체치료제에 비해 높은 성장률을 보이고 있다.
+
+        ·  허셉틴 오리지널의 물질 특허는 유럽과 미국에서 각각 2014년과 2019년에 만료되며, 이에 맞추어 많은 제약사들이
+        허셉틴 바이오시밀러를 개발하고 있다.
+
+        ·  ㈜알테오젠은 브라질의 크리스탈리아 사와 공동 개발을 진행하여 임상 1상 시험을 캐나다에서 성공적으로 완료하였다.
+        기술이전 계약을 체결한 중국 치루제약이 임상 3상을 완료하였으며, 임상결과보고서를 수령하고 중국 내 품목허가 과정에 있다.
+      </pre>
+    </div>
+  </div>
+
+  <!-- 2번째 그래프 -->
+
+    <p class="p04">ALT-P7</p>
+    <p class="p05">Breast/Gastric Cancer ADC</p>
+    <a href="ALT.html" title="ALT-P7설명보기" id="sec3_a2"><i class="fa-solid fa-circle-question"></i>Domestic Phase I completed</a>
+
+  <div class="chart1">
+    <div class="bar1"></div>
+    <div class="bar1"></div>
+    <div class="bar1"></div>
+    <div class="bar1"></div>
+    <div class="bar1"></div>
+    <div class="bar1"></div>
+  </div>
+  
+  <div class="bar_graph2"></div>
+
+  <!-- 2번째 그래프 모달윈도우 -->
+  <div class="mymodal6" id="modal6">
+    <div class="modal6_con">
+      <span class="close5">&times;</span>
+      <img src="./images/section3-2.jpg" alt="NexMab&#8482; ADC기술" id="modal_img6">
+      <pre class="modal1_info5">
+        · ㈜알테오젠은 원천 기반기술인 NexMab™ ADC 기술을 사용하여 유방암 및 위암의 항체-약물 접합체 표적치료제인
+        ALT-P7을 개발하고 있다.
+
+        · 20~25%의 유방암 환자와 10~15%의 위암 환자에서 암세포 표지단백질인 HER2가 과발현되는 것으로 알려져 있다.
+        HER2는 현재까지 밝혀진 암 표지물질 중에서 가장 성공적인 항암 표적으로, 허셉틴과 퍼제타 등의 단일클론 항체치료제와
+        캐싸일라라는 항체-약물 접합체가 HER2를 표적으로 하여 시장에 출시된 바 있다.
+
+        · ALT-P7은 HER2를 표적으로 하는 항체-약물 접합체로서 NexMab™ ADC 기술을 기반으로 하는데, 매우 높은 세포독성 물질인
+        MMAE가 항체의 중쇄 C-말단에 도입된 펩타이드 내의 시스테인 기에 접합되어 있다.  평균적으로 3.5개의 세포독성 물질인
+        DM1이 접합된 캐싸일라와는 달리, ALT-P7에서는 2개의 MMAE만이 위치 특이적으로 접합되어 있다.  이처럼 접합된 약물의
+        개수가 적은데도 불구하고 ALT-P7은 캐싸일라와 비교하여 월등히 우월한 안정성과 동물 실험에서의 항암 효과를 보여주는 등 
+        타의 추종을 불허하는 장점을 가지고 있으며, 현재 임상 1상 시험이 성공적으로 마무리 되었으며, 임상 2상 준비가 진행되고 있다.
+      </pre>
+    </div>
+  </div>
+
+  <!-- 3번째 그래프 -->
+
+  <p class="p06">ALT-L9</p>
+  <p class="p07">Eylea Biosimilar</p>
+  <a href="ALT.html" title="ALT-L9설명보기" id="sec3_a3"><i class="fa-solid fa-circle-question"></i>Global Phase III Clinical Trial in Progress</a>
+
+<div class="chart2">
+  <div class="bar2"></div>
+  <div class="bar2"></div>
+  <div class="bar2"></div>
+  <div class="bar2"></div>
+  <div class="bar2"></div>
+  <div class="bar2"></div>
+</div>
+
+<div class="bar_graph3"></div>
+
+<!-- 3번째 그래프 모달윈도우 -->
+<div class="mymodal7" id="modal7">
+  <div class="modal7_con">
+    <span class="close6">&times;</span>
+    <img src="./images/section3-3.jpg" alt="NexMab&#8482; ADC기술" id="modal_img7">
+    <pre class="modal1_info6">
+      · ㈜알테오젠은 자회사 알토스 바이오로직스와 공동 개발을 통해 아일라아(애플리버셉트) 바이오시밀러 ALT-L9을 개발 중이다.
+
+      ·  아일리아는 노인성 황반변성 치료제로서, 2022년 세계 시장 규모는 96억 달러에 달하며,
+      인구 노령화에 따라 2027년 153억 달러 이상으로 증가가 예상된다.
+
+      ·  아일리아는 성장성이 높은 바이오 의약품이지만 고가이기 때문에, 오리지널 대비 저렴한 바이오시밀러가 출시되면
+      그 동안 고가 의료비 부담으로 혜택을 누리지 못하는 잠재 환자들로 인해 시장이 확대될 것으로 전망되고 있다.
+
+      ·  ㈜알테오젠은 미국 GLP 비임상 시험을 성공적으로 완료하였으며,
+      현재 임상 3상의 투약을 마치고 유럽의약품청(EMA)에 판매허가(MAA)를 신청했다.
+    </pre>
+  </div>
+</div>
+
+
+<!-- 4번째 그래프 -->
+
+<p class="p08">ALT-L2</p>
+<p class="p09">Herceptin Biosimilar</p>
+<a href="ALT.html" title="ALT-L2설명보기" id="sec3_a4"><i class="fa-solid fa-circle-question"></i>BLA in China</a>
+
+<div class="chart3">
+<div class="bar3"></div>
+<div class="bar3"></div>
+<div class="bar3"></div>
+<div class="bar3"></div>
+<div class="bar3"></div>
+<div class="bar3"></div>
+</div>
+
+<div class="bar_graph4"></div>
+
+<!-- 4번째 그래프 모달윈도우 -->
+<div class="mymodal8" id="modal8">
+  <div class="modal8_con">
+    <span class="close7">&times;</span>
+    <img src="./images/section3-4.jpg" alt="NexMab&#8482; ADC기술" id="modal_img8">
+    <pre class="modal1_info7">
+      · ㈜알테오젠은 유방암 치료제 허셉틴의 바이오시밀러인 ALT-L2를 개발 중에 있다.
+
+      ·  허셉틴은 Roche 사의 오리지널 바이오의약품으로, 2016년 현재 70억 달러의 시장을 차지하고 있는 블록버스터 단일클론항체 
+      의약품이다. 특히, 효능이 뛰어나면서도 부작용이 적고, 2010년 위암의 적응증이 추가 (미국 FDA)되어 위암 환자가 많은 아시아를
+      중심으로 다른 항체치료제에 비해 높은 성장률을 보이고 있다.
+
+      ·  허셉틴 오리지널의 물질 특허는 유럽과 미국에서 각각 2014년과 2019년에 만료되며,
+      이에 맞추어 많은 제약사들이 허셉틴 바이오시밀러를 개발하고 있다.
+
+      ·  ㈜알테오젠은 브라질의 크리스탈리아 사와 공동 개발을 진행하여 임상 1상 시험을 캐나다에서 성공적으로 완료하였다.
+      기술이전 계약을 체결한 중국 치루제약이 임상 3상을 완료하였으며, 임상결과보고서를 수령하고 중국 내 품목허가 과정에 있다.
+    </pre>
+  </div>
+</div>
+
+  </section>
+
+  <!-- section4 -->
+  <section id="sec4" class="section">
+    <h3>MEDIA</h3>
+    
+    <article class="sec4_art">
+      <h3 class="h3">section4</h3>
+      <ul class="new_list">
+        <li><a href="https://www.docdocdoc.co.kr/news/articleView.html?idxno=3025122" title="">알테오젠 “상반기 내 신규 SC제형 기술이전 계약 전망”</a><span class="date1">2025.01.17 </span></li>
+        <li><a href="http://www.hitnews.co.kr/news/articleView.html?idxno=60728" title="">[투자리포트] 알테오젠, 키트루다SC 임상 결과로 수요 러시 기대</a><span class="date1">2025.01.09</span></li>
+        <li><a href="http://www.hitnews.co.kr/news/articleView.html?idxno=60719" title="">알테오젠, JP모건서 'SC 기술' 글로벌 파트너십 확대 추진</a><span class="date1">2025.01.08</span></li>
+        <li><a href="https://www.kpanews.co.kr/article/show.asp?category=D&idx=254718" title="">알테오젠, 엔허투SC 개발에 총 3억달러 독점계약 체결</a><span class="date1">2024.11.09</span></li>
+      </ul>
+      
+      <a href="news.html" title="더보기버튼" id="sec4_button1">더보기</a>
+    </article>
+
+    <h3 class="sec4_h3">STOCK</h3>
+    
+    <article class="sec4_art2">
+      <h4>section4</h4>
+      <a href="https://finance.naver.com/item/main.naver?code=196170" title="주식차트"><img src="./images/stock.JPG" alt="주식보러가기" class="stock_chart1"></a>
+    </article>
+
+    <a href="https://finance.naver.com/item/main.naver?code=196170" title="바로가기버튼" id="sec4_button2">바로가기</a>
+
+  </section>
+
+  <!-- section5 -->
+  <section id="sec5" class="section">
+    <h3>RECRUIMENT</h3>
+
+  <article class="sec5_art1">
+    <h3 class="h3">section5</h3>
+    <ul class="sec5_ul1">
+      <li>2025</li>
+      <li>알테오젠</li>
+      <li class="sec5_li">QA그룹 담당자</li>
+      <li class="sec5_li">채용공고</li>
+      <li><span class="sec5_span1">02.07</span><span class="sec5_span2">FRI</span> &#45;&#45;&#45;&#45; <span class="sec5_span1">02.23</span><span class="sec5_span2">SUN</span></li>
+    </ul>
+    <div class="sec5_div">
+    <pre>알테오젠은 바이오베터와 바이오시밀러를 연구개발 하고있는
+     기술선도 바이오 기업입니다.</pre>
+    <ul>
+      <li>Hybrozyme Technology 원천기술</li>
+      <li>바이오베터 기술인 NexP™ 지속형 기술</li>
+      <li>NexMab™ ADC기술 등을 연구개발</li>
+    </ul>
+    </div>
+    <img src="./images/section5-RECRUIMENT.JPG" alt="채용공고" class="sec5_img1">
+  </article>
+  <img src="./images/logo_nobackground.png" alt="배경로고" id="back_logo">
+
+  <article class="sec5_art2">
+    <h3 class="h3">section5</h3>
+    <ul>
+      <li>알테오젠과 함께 성장할 인재를 구합니다.</li>
+      <li><span class="sec5_ul2">A</span> mbitious</li>
+      <li><span class="sec5_ul2">L</span>  ively</li>
+      <li><span class="sec5_ul2">T</span>  enacious</li>
+      <li><span class="sec5_ul2">E</span>  thicality</li>
+      <li><span class="sec5_ul2">O</span> ptimistic</li>
+      <li><span class="sec5_ul2">G</span> enuine</li>
+      <li><span class="sec5_ul2">E</span>  lastic</li>
+      <li><span class="sec5_ul2">N</span> ovelty</li>
+    </ul>
+
+    <fieldset>
+      <legend>인재채용</legend>
+      <input type="text" title="성" class="f_name" placeholder="FirstName" maxlength="10">
+      <input type="text" title="이름" class="l_name"
+      placeholder="LastName" maxlength="10">
+      <input type="text" title="이메일" class="e_mail"
+      placeholder="E-Mail">
+      <input type="submit" value="신청하기" class="submit_btn">
+    </fieldset>
+  </article>
+  
+  <label for="fileUpload" class="file-label">파일선택</label>
+  <input type="file" title="파일선택" id="fileUpload" class="sec5_btn1">
+
+  <a href="inquiry.html" title="문의하기버튼" class="sec5_btn2">문의하기</a>
+  </section>
+
+  </main>
+
+  <!-- 푸터영역 시작 -->
+  <footer>
+    <h3><a href="#"><img src="./images/footerlogo.png" alt="하단로고"></a></h3>
+
+    <ul class="ft_ul">
+      <li><a href="inquiry.html" title="고객지원">고객지원</a></li>
+      <li><a href="map.html" title="오시는길">오시는길</a></li>
+      <li><a href="inquiry.html" title="문의하기">문의하기</a></li>
+      <li><a href="inquiry.html" title="개인정보처리방침">개인정보처리방침</a></li>
+    </ul>
+
+    <ul class="ft_ul2">
+      <li>대표번호 042-384-8780   팩스 042-384-8770</li>
+      <li>본사 : (34054) 대전광역시 유성구 유성대로 1628번길 62 (전민동) 서울연구소 : 서울특별시 구로구 디지털로 272 한신아이티타워 1304호</li>
+    </ul>
+  <address>
+    Copyright&copy; 2025 alteogen allrights reserved.
+  </address>
+  </footer>
+</body>
+</html>
